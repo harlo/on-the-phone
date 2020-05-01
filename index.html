@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<style>
+			div {
+				width: 25em;
+				font-size: 1em;
+				font-family: arial;
+			}
+
+			#phonecall_image {
+				height: 20em;
+				width: inherit;
+			}
+
+			#phonecall_image img {
+				max-height: 19em;
+				max-width: 23em;
+				padding: 0.3em;
+			}
+
+			#phonecall_chyron {
+				padding: 0;
+			}
+
+			#phonecall_chyron h1 {
+				padding: 0 1em;
+			}
+
+			#fpf_logo {
+				width: 3em;
+				height: 3em;
+				display: block;
+				position: absolute;
+				right: 8em;
+				margin-top: -1em;
+			}
+
+			span.otf {
+				color:#999;
+				font-weight: normal;
+				font-size: 0.7em;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="phonecall_image">
+			<img src="/assets/phones/{{ phonecall_image }}" />
+		</div>
+		<div id="phonecall_chyron">
+			<img id="fpf_logo" src="/assets/fpf_logo_alone.png" />
+			<h1><span class="otf">On the phone:</br></span><span class="phonecaller">{{ phonecaller }}</span></h1>
+		</div>
+	</body>
+</html>
